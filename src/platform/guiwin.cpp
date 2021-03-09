@@ -1095,7 +1095,7 @@ public:
                         return 0;
                     }
                 } else if(wParam == VK_ESCAPE) {
-                    sscheck(SendMessageW(hWindow, msg, wParam, lParam));
+                    sscheck(ShowWindow(h, SW_HIDE));
                     return 0;
                 }
         }
